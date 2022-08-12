@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="highscore_page">
+            <button>View Your Highscore</button>
+        </div>
+        <div class="timer">
+            <div class="timer_text">Time Left:</div>
+            <div class="timer_sec">100</div>
+        </div>
+    </header>
+
+    <div class="start_btn">
+        <p>Try to answer all questions before the timer reaches 0.</p>
+        <button>Start The Quiz</button>
+    </div>
+
+    <div class="quiz">
+        <section>
+            <div class="question_text">
+                <!--<span>Soup is __.</span> -->
+            </div>
+            <div class="question_options_list">
+                <!--<div class="option">
+                    <span>1. Made of rocks</span>
+                </div>
+                <div class="option">
+                    <span>2. Made of sand</span>
+                </div>
+                <div class="option">
+                    <span>3. Made of vegies</span>
+                </div>
+                <div class="option">
+                    <span>4. Made of paper</span>
+                </div> -->
+            </div>
+        </section>
+        <footer>
+            <button class="next_btn">Continue</button>
+        </footer>
+    </div>
+
+    <div class="highscores">
+        <form method="POST">
+            <div class="input-group">
+                <div class="score_text">
+                    <!--<span>You got<p>0</p><p>out off</p><p>5</p></span>-->
+                </div>
+                <label for="initials">Enter initials</label>
+                <input type="text" name="initials" id="initial-scale" placeholder="Enter Your initials..." />
+            </div>
+            <div class="buttons">
+                <button class="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="questions.js"></script>
+
+</body>
+</html>

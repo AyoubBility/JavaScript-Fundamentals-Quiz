@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    font-size: 40px;
+}
+
+.timer{
+    text-align:right;
+}
+
+.highscore_page button{
+    font-size: 40px;
+    font-weight: 300;
+    color: rgb(199, 74, 199);
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+.highscore_page button:hover{
+    color: rgb(222, 86, 222);
+    cursor: pointer;
+}
+
+.start_btn,
+.quiz,
+.highscores{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start_btn p{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.start_btn button{
+    font-size: 30px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    cursor: pointer;
+    color: black;
+    background-color: rgb(199, 74, 199);
+}
+
+.start_btn button:hover{
+    background-color: rgb(222, 86, 222);
+}
+
+.quiz{
+    width: 550px;
+    background: white;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.active_quiz,
+.active_highscores{
+    width: 650px;
+    z-index: 5;
+    background: white;
+    border-radius: 5px;
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.quiz section{
+    padding: 25px 30px 20px 30px;
+    background: white;
+}
+
+.quiz section .question_text{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.quiz section .question_options_list{
+    padding: 20px 0;
+    display: block;
+}
+
+section .question_options_list .option{
+    background: rgb(199, 74, 199);
+    border: 1px solid rgb(199, 74, 199);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 5px;
+    margin-right: 250px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+section .question_options_list .option:hover{
+    background-color: rgb(222, 86, 222);
+    color: lightgray;
+}
+
+.question_options_list .option.disabled{
+    pointer-events: none;
+}
+
+footer .next_btn{
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 5px;
+    margin-right: 250px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+footer .next_btn:hover{
+    background-color: rgb(222, 86, 222);
+    color: lightgray;
+}
+
+.highscores{
+    background: white;
+    width: 650px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+.highscores button{
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+.highscores button:hover{
+    background-color: rgb(222, 86, 222);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.highscores .score_text span{
+    display: flex;
+}
+
+.score_text span{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.score_text span p{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0 4px;
+}
+
+.input-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+input {
+    background-color: white;
+    border-radius: 3px;
+    border-width: 3px;
+    border-color: black;
+    color: black;
+    font-size: 1.1em;
+    height: 45px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 10px;
+    max-width: 100%;
+    padding: 8px 8px 8px 8px;
+    transition-delay: 0s, 0s;
+    transition-duration: 0.2s, 0.2s;
+    transition-property: background-color, color;
+    transition-timing-function: ease, ease;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+label {
+    color: black;
+    font-size: large;
+    font-weight: 600;
+}
